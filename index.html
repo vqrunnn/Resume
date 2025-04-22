@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NADIMPALLI VLN RAJU - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f3f4f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            padding: 70px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 25px;
+            margin-bottom: 50px;
+            color: #3498db;
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+
+        .company {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #7f8c8d;
+        }
+
+        .skills-hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .skills-hobbies-grid .card {
+            background-color: #ecf0f1;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .skills-hobbies-grid .card h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        .skills-hobbies-grid .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-hobbies-grid .card ul li {
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            line-height: 1.9;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .skills-hobbies-grid .card ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #3498db;
+            font-size: 1.4rem;
+            line-height: 1;
+        }
+
+
+        .job {
+            margin-bottom: 35px;
+            padding-left: 25px;
+            border-left: 3px solid #3498db;
+            position: relative;
+        }
+
+        .job ul {
+            margin-bottom: 25px;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .job ul li {
+            margin-bottom: 15px;
+            line-height: 1.9;
+            font-size: 1.1rem;
+        }
+
+        .job::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 8px;
+            height: 8px;
+            background-color: #3498db;
+            border-radius: 50%;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        a:hover {
+            color: #217dbb;
+            text-decoration: underline;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 40px 0;
+            color: white;
+            text-align: center;
+            margin-bottom: 70px;
+            border-radius: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        header h1 {
+            color: white;
+            border-bottom: none;
+            font-size: 5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.03em;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-weight: 400;
+            opacity: 0.9;
+            max-width: 900px;
+            line-height: 2;
+            padding: 0 20px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        header a:hover {
+            color: #1a5275;
+            text-decoration: underline;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 80px solid transparent;
+            border-right: 80px solid transparent;
+            border-top: 60px solid #fff;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 35px 0;
+            margin-top: 70px;
+            border-radius: 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .container {
+            border-radius: 15px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .section-heading h2 {
+            margin: 0;
+            font-size: 3rem;
+            color: #2c3e50;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .section-heading::before,
+        .section-heading::after {
+            content: "";
+            flex: 1;
+            height: 3px;
+            background-color: #bdc3c7;
+        }
+
+        .job-company-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 15px;
+        }
+
+        .job-company-title .job-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            letter-spacing: -0.02em;
+        }
+
+        .job-company-title .company {
+            font-size: 1.2rem;
+            color: #95a5a6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px;
+            }
+
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 4rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .section-heading h2 {
+                font-size: 2.5rem;
+            }
+             .skills-hobbies-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>NADIMPALLI VLN RAJU</h1>
+        <p>+91 9347291586 | <a href="mailto:vin.nadimpalli@gmail.com">vin.nadimpalli@gmail.com</a> | <a
+                href="https://www.linkedin.com/in/vin-raju-nadimpalli" target="_blank">www.linkedin.com/in/vin-raju-nadimpalli</a></p>
+    </header>
+    <div class="container">
+
+        <div class="section">
+            <h2 class="section-heading">Professional Summary</h2>
+            <p>A first-year student with a strong interest in finance and marketing, complemented by leadership experience in both
+                areas. Skilled in analyzing trends and implementing data-driven solutions to deliver impactful results.
+                Experienced in managing financial operations and proven ability to work effectively in teams.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Education</h2>
+            <p>
+                <strong>Christ University, Bangalore (2024 - 2027)</strong><br>
+                Bachelor of Business Administration (Finance & International Business)
+            </p>
+            <p>
+                <strong>Indian Institute of Management, IIM Bangalore (2024-2027)</strong><br>
+                Bachelor of Business Administration (Digital Business & Entrepreneurship)
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Skills and Hobbies</h2>
+            <div class="skills-hobbies-grid">
+                <div class="card">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Certification: Microsoft Power BI, Generative Al (Microsoft), Data Analysis (Microsoft)</li>
+                        <li>Operating Systems: Windows, Linux, MacOS</li>
+                        <li>Languages: Python</li>
+                        <li>MS Tools: MS Excel, MS Word, MS Powerpoint</li>
+                        <li>Data Visualization Tools: PowerBI, Tableau</li>
+                        <li>Databases: SQL, Mongodb, Postgres</li>
+                        <li>Tools: Todd, Git, GitHub</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Hobbies</h3>
+                    <ul>
+                         <li>Geopolitical Debates: Participates in discussions and debates on current global issues.</li>
+                        <li>Lawn Tennis: Was ranked among the top 50 players, now playing recreationally.</li>
+                        <li>University Basketball Team: Part of the university basketball team, participating in inter-university tournaments.
+                        </li>
+                        <li>Current Affairs Engagement: Regularly follows news outlets, journals, and forums on geopolitics to stay up-to-date
+                            with shifting power structures, trade relations, and regional conflicts.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Relevant Experience</h2>
+            <div class="job">
+                <div class="job-company-title">
+                    <p class="job-title">Campus Ambassador</p>
+                    <p class="company">Guidero Private Limited (Dec 2024 - Present)</p>
+                </div>
+                <p>Guidero is a personalized platform for travelers, offering a space to ask and answer travel-related questions,
+                    share experiences,
+                    and discover destination insights. It helps travelers make informed decisions by connecting them with a
+                    community
+                    of experienced explorers and curated travel knowledge. Team: 6</p>
+                <ul>
+                    <li>Conducted research to curate relevant travel content and insights</li>
+                    <li>Developed promotional strategies to increase platform visibility among travelers, Collaborated with the team
+                        to design campaigns highlighting the app's unique features.</li>
+                    <li>Contributed to refining the app's structure and features to align with user needs by taking feedback, and
+                        improving overall functionality and satisfaction.</li>
+                    <li>Analyzed user interactions and feedback to provide actionable recommendations for enhancing platform
+                        engagement and content relevance.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-company-title">
+                    <p class="job-title">Fundraiser</p>
+                    <p class="company">Muskurahat Foundation (Dec 2024 - Jan 2025)</p>
+                </div>
+                <p>Muskurahat Foundation is a non-profit organization that uplifts underprivileged communities through initiatives
+                    focused on education, child welfare, and sustainable development.
+                    It strives to create long-term impact by addressing social issues and empowering individuals through innovative
+                    programs and collaborative
+                    campaigns. Team: 25</p>
+                <ul>
+                    <li>Worked alongside a large team of 25 fundraisers to strategize and implement effective fundraising campaigns,
+                        maximizing outreach and impact.</li>
+                    <li>Assisted in expanding the foundation's visibility and reach through digital platforms by helping create social
+                        media content to amplify campaign messages and engage potential donors.</li>
+                    <li>Played a key role in raising substantial funds for impactful causes, demonstrating strong organizational and
+                        communication skills.</li>
+                    <li>Introduced creative approaches to fundraising, such as Peer-to-Peer Fundraising, increasing donor engagement
+                        and enhancing the effectiveness of campaigns.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-heading">Additional Experience</h2>
+            <div class="job">
+                <div class="job-company-title">
+                    <p class="job-title">Member</p>
+                    <p class="company">SWO MUNSOC (Aug 2024 - Present)</p>
+                </div>
+                <p>SWO MUNSOC is a student-run organization dedicated to fostering Model United Nations (MUN) participation,
+                    hosting MUN
+                    conferences, and engaging students in global discussions on various international issues.
+                    The society offers opportunities for students to enhance their diplomatic, public speaking, and leadership skills,
+                    while encouraging collaboration, critical thinking, and active participation in global affairs through MUN
+                    simulations. Team: 15
+                </p>
+                <ul>
+                    <li>Represented various countries in MUN conferences, successfully debating and drafting resolutions.
+                        Earned multiple accolades, maintaining a consistent winning streak in MUNS.</li>
+                    <li>Actively involved in hosting college-level MUN events with a team of 15 members, contributing to creative
+                        planning, execution, and successful conferences. Skilled in teamwork, and communication</li>
+                    <li>Designed creative event themes, such as the Marvel Committee as a special committee in MUNs or a dedicated
+                        MUN for faculties only, enhancing the experience and engagement of participants.</li>
+                    <li>Took initiative in mentoring new members and guiding them through the MUN process.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-company-title">
+                    <p class="job-title">Finance & Outreach Head</p>
+                    <p class="company">ACC MUNSOC (July 2022 - Aug 2023)</p>
+                </div>
+                <p>ACC MUNSOC is a student-run organization focused on organizing and hosting Model United Nations (MUN)
+                    conferences that
+                    simulate global diplomatic discussions.
+                    The society provides a platform for students to develop teamwork and professional skills through organizing,
+                    participating in, and
+                    managing MUN events. Team: 7</p>
+                <ul>
+                    <li>Managed the organization's financial planning, budgeting, and expense tracking, ensuring effective allocation
+                        of resources for MUN conferences and events.</li>
+                    <li>Led the development and execution of outreach strategies, successfully securing partnerships to fund the
+                        society's initiatives and events.</li>
+                    <li>Oversied financial reporting, providing transparency and accountability in budget management and expenditure
+                        tracking.</li>
+                    <li>Enhanced delegate participation through strategic marketing campaigns, leveraging social media and targeted
+                        outreach to attract a diverse range of attendees.</li>
+                    <li>Collaborated cross-functionally with other departments within ACC MUNSOC to ensure seamless execution of
+                        MUN conferences, contributing to overall event success.</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <footer>
+        <p>&copy; 2025 Nadimpalli VLN Raju. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
